@@ -6,17 +6,17 @@ type Data = {
   name: string;
   time: string;
   addDoc: string;
+  version: number;
 };
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res
-    .status(200)
-    .json({
-      name: "Hello firebase",
-      time: new Date().toISOString(),
-      addDoc: String(addDoc),
-    });
+  res.status(200).json({
+    name: "Hello firebase",
+    time: new Date().toISOString(),
+    addDoc: String(addDoc),
+    version: 1,
+  });
 }

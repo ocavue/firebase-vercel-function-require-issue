@@ -1,4 +1,7 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
-}
+"use strict";
+
+const config = {
+  experimental: { esmExternals: "loose" },
+};
+
+module.exports = config;

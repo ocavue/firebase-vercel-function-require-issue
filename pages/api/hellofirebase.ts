@@ -1,6 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { auth } from "../../services/firebase-debug";
+import { auth } from "services/firebase-debug";
 
 type Data = Record<string, string | number>;
 
